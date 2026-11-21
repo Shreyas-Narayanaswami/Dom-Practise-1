@@ -105,18 +105,90 @@
 //     img.src=arr[index];
 // })
 
- 
+   
 
-const themeBtn = document.getElementById("theme-btn");
+// const themeBtn = document.getElementById("theme-btn");
 
-themeBtn.addEventListener("click", () => {
-  // Toggle the 'dark-mode' class and store whether it is now active (true/false)
-  const isDarkMode = document.body.classList.toggle("dark-mode");
+// themeBtn.addEventListener("click", () => {
+//   // Toggle the 'dark-mode' class and store whether it is now active (true/false)
+//   const isDarkMode = document.body.classList.toggle("dark-mode");
 
-  // Update button text based on the active mode
-  if (isDarkMode) {
-    themeBtn.textContent = "☀️ Light Mode";
-  } else {
-    themeBtn.textContent = "🌙 Dark Mode";
-  }
-});
+//   // Update button text based on the active mode
+//   if (isDarkMode) {
+//     themeBtn.textContent = "☀️ Light Mode";
+//   } else {
+//     themeBtn.textContent = "🌙 Dark Mode";
+//   }
+// });
+
+
+
+
+ // 1. State: Array to hold student objects
+    // let students = [];
+
+    // // 2. DOM Selection
+    // const nameInput = document.getElementById("nameInput");
+    // const courseInput = document.getElementById("courseInput");
+    // const addBtn = document.getElementById("addBtn");
+    // const studentsContainer = document.getElementById("students");
+    // const totalCount = document.getElementById("totalCount");
+
+    // // 3. Render Function (Dynamic Rendering)
+    // function renderStudents() {
+    //   // Clear existing cards before re-rendering
+    //   studentsContainer.innerHTML = "";
+
+    //   students.forEach((student, index) => {
+    //     // Create card element
+    //     const card = document.createElement("div");
+    //     card.className = "card";
+
+    //     // Create Name element
+    //     const nameEl = document.createElement("p");
+    //     nameEl.textContent = student.name;
+
+    //     // Create Course elemen
+    //     const courseEl = document.createElement("p");
+    //     courseEl.textContent = student.course;
+
+    //     // Create Delete button
+    //     const deleteBtn = document.createElement("button");
+    //     deleteBtn.textContent = "Delete";
+
+    //     // Delete functionality
+    //     deleteBtn.addEventListener("click", () => {
+    //       students.splice(index, 1); // Remove from array
+    //       renderStudents();          // Re-render UI
+    //     });
+
+    //     // Append elements into card, then card into container
+    //     card.append(nameEl,courseEl,deleteBtn);
+    //     studentsContainer.appendChild(card);
+    //   });
+
+
+    //   totalCount.textContent = `Total Students: ${students.length}`;
+    // }
+
+    // // 4. Add Student Event Handling
+    // addBtn.addEventListener("click", () => {
+    //   const name = nameInput.value.trim();
+    //   const course = courseInput.value.trim();
+
+    //   // Prevent adding empty entries
+    //   if (!name || !course) {
+    //     alert("Please enter both Name and Course.");
+    //     return;
+    //   }
+
+    //   // Add new student object to array
+    //   students.push({ name, course });
+
+    //   // Clear input fields
+    //   nameInput.value = "";
+    //   courseInput.value = "";
+
+    //   // Update UI
+    //   renderStudents();
+    // });
